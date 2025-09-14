@@ -55,6 +55,16 @@ Sample data includes:
 - Risk score (Low, Medium, High)
 - Clauses with summaries and confidence scores
 - AI-generated insights and evidence
+
+
+## 🌐 Deployment
+
+The project is deployed on **Vercel** for easy access and demonstration.  
+
+🔗 **Live Demo:** [https://contract-spa-dashboard.vercel.app](https://contract-spa-dashboard.vercel.app)
+
+> The app is fully functional in the browser, including authentication simulation, contract browsing, filters, and contract detail views.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -69,13 +79,7 @@ cd smart-contracts-dash
 # Install dependencies
 npm install
 
-## 🌐 Deployment
 
-The project is deployed on **Vercel** for easy access and demonstration.  
-
-🔗 **Live Demo:** [https://contract-spa-dashboard.vercel.app](https://contract-spa-dashboard.vercel.app)
-
-> The app is fully functional in the browser, including authentication simulation, contract browsing, filters, and contract detail views.
 
 
 
