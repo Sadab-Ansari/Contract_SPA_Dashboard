@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional SaaS Contracts Dashboard Design System */
+
+@layer base {
+  :root {
+    /* Background & Surfaces */
+    --background: 0 0% 100%; /* White */
+    --foreground: 210 11% 15%; /* Gray-900 */
+    
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 11% 15%; /* Gray-900 */
+    
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 11% 15%; /* Gray-900 */
+    
+    /* Brand Colors - Clean Blue */
+    --primary: 217 91% 60%; /* Blue-500 #3B82F6 */
+    --primary-foreground: 0 0% 100%; /* White */
+    --primary-hover: 217 91% 54%; /* Blue-600 #2563EB */
+    --primary-glow: 217 91% 90%; /* Light blue for glows */
+    
+    /* Secondary & Neutrals */
+    --secondary: 210 20% 98%; /* Gray-50 #F9FAFB */
+    --secondary-foreground: 215 19% 35%; /* Gray-700 */
+    
+    --muted: 210 20% 98%; /* Gray-50 #F9FAFB */
+    --muted-foreground: 210 9% 46%; /* Gray-500 */
+    
+    --accent: 210 20% 98%; /* Gray-50 #F9FAFB */
+    --accent-foreground: 215 19% 35%; /* Gray-700 */
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 96%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 38 92% 96%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 0 84% 96%;
+    
+    /* Risk Score Colors */
+    --risk-low: 142 76% 36%;
+    --risk-medium: 38 92% 50%;
+    --risk-high: 0 84% 60%;
+    --risk-critical: 348 83% 47%;
+    
+    /* UI Elements */
+    --border: 220 13% 91%; /* Gray-300 #E5E7EB */
+    --input: 220 13% 91%; /* Gray-300 #E5E7EB */
+    --ring: 217 91% 60%; /* Blue-500 #3B82F6 */
+    
+    --radius: 0.5rem;
+    
+    /* Clean Gradients - Removed colorful gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 54%));
+    --gradient-card: none;
+    --gradient-hero: none;
+    
+    /* Subtle Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+    --shadow-primary: 0 10px 30px -10px hsl(217 91% 60% / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+    
+    /* Sidebar Colors - Light Gray */
+    --sidebar-background: 210 20% 98%; /* Gray-50 #F9FAFB */
+    --sidebar-foreground: 215 19% 35%; /* Gray-700 */
+    --sidebar-primary: 217 91% 60%; /* Blue-500 */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 100%; /* White for hover states */
+    --sidebar-accent-foreground: 215 19% 35%; /* Gray-700 */
+    --sidebar-border: 220 13% 91%; /* Gray-300 */
+    --sidebar-ring: 217 91% 60%; /* Blue-500 */
+  }
+
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 239 84% 67%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 239 84% 60%;
+    --primary-glow: 239 84% 20%;
+    
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 217 33% 18%;
+    --accent-foreground: 210 40% 98%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 10%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 38 92% 10%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 0 84% 10%;
+    
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 239 84% 67%;
+    
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 239 84% 67%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 239 84% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Status Badge Styles */
+  .status-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  
+  .status-active {
+    @apply bg-success-light text-success-foreground;
+  }
+  
+  .status-pending {
+    @apply bg-warning-light text-warning-foreground;
+  }
+  
+  .status-expired {
+    @apply bg-destructive-light text-destructive-foreground;
+  }
+  
+  /* Risk Score Styles */
+  .risk-score {
+    @apply inline-flex items-center rounded-lg px-2 py-1 text-xs font-semibold;
+  }
+  
+  .risk-low {
+    @apply bg-success-light text-success;
+  }
+  
+  .risk-medium {
+    @apply bg-warning-light text-warning;
+  }
+  
+  .risk-high {
+    @apply bg-destructive-light text-destructive;
+  }
+  
+  .risk-critical {
+    @apply bg-red-50 text-red-700;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  /* Button hover glows */
+  .btn-glow:hover {
+    @apply shadow-primary;
+  }
+}
+

@@ -1,0 +1,397 @@
+{
+  "contracts": [
+    {
+      "id": "CNT-001",
+      "name": "Software Development Agreement",
+      "parties": ["TechCorp Inc.", "DevStudio LLC"],
+      "startDate": "2024-01-15",
+      "expiryDate": "2024-12-15",
+      "status": "active",
+      "riskScore": 2.3,
+      "value": 150000,
+      "type": "Service Agreement",
+      "clauses": [
+        {
+          "id": "CL-001",
+          "title": "Intellectual Property Rights",
+          "summary": "All developed software and related IP shall remain property of TechCorp Inc.",
+          "confidence": 0.95,
+          "riskLevel": "low"
+        },
+        {
+          "id": "CL-002",
+          "title": "Termination Clause",
+          "summary": "Either party may terminate with 30 days written notice.",
+          "confidence": 0.89,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "medium",
+          "title": "Payment Terms Ambiguity",
+          "description": "Payment schedule lacks specific milestones and could lead to disputes."
+        },
+        {
+          "type": "recommendation",
+          "severity": "low",
+          "title": "Add Force Majeure Clause",
+          "description": "Consider adding comprehensive force majeure provisions for better risk management."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Payment shall be made within 30 days of invoice receipt",
+          "relevance": 0.92,
+          "page": 3,
+          "section": "Payment Terms"
+        }
+      ]
+    },
+    {
+      "id": "CNT-002",
+      "name": "Non-Disclosure Agreement",
+      "parties": ["SecureTech Corp", "ConsultantCo"],
+      "startDate": "2024-03-01",
+      "expiryDate": "2025-03-01",
+      "status": "active",
+      "riskScore": 1.1,
+      "value": 0,
+      "type": "NDA",
+      "clauses": [
+        {
+          "id": "CL-003",
+          "title": "Confidentiality Obligations",
+          "summary": "Both parties agree to maintain strict confidentiality of shared information.",
+          "confidence": 0.98,
+          "riskLevel": "low"
+        }
+      ],
+      "insights": [
+        {
+          "type": "recommendation",
+          "severity": "low",
+          "title": "Standard NDA Template",
+          "description": "This follows industry standard NDA practices with minimal risk."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "All confidential information shall be protected for a period of 5 years",
+          "relevance": 0.88,
+          "page": 1,
+          "section": "Confidentiality"
+        }
+      ]
+    },
+    {
+      "id": "CNT-003",
+      "name": "Equipment Lease Agreement",
+      "parties": ["Manufacturing Corp", "Equipment Rental Inc."],
+      "startDate": "2023-06-01",
+      "expiryDate": "2024-05-31",
+      "status": "expiring_soon",
+      "riskScore": 4.7,
+      "value": 75000,
+      "type": "Lease Agreement",
+      "clauses": [
+        {
+          "id": "CL-004",
+          "title": "Maintenance Responsibilities",
+          "summary": "Lessee responsible for routine maintenance, lessor handles major repairs.",
+          "confidence": 0.82,
+          "riskLevel": "high"
+        },
+        {
+          "id": "CL-005",
+          "title": "Early Termination",
+          "summary": "Penalty fees apply for early termination without cause.",
+          "confidence": 0.91,
+          "riskLevel": "high"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "high",
+          "title": "Contract Expiring Soon",
+          "description": "This contract expires in less than 3 months. Renewal negotiations should begin."
+        },
+        {
+          "type": "risk",
+          "severity": "high",
+          "title": "Unclear Maintenance Terms",
+          "description": "Maintenance responsibility boundaries are not clearly defined."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Equipment must be returned in original condition, reasonable wear excepted",
+          "relevance": 0.79,
+          "page": 4,
+          "section": "Return Conditions"
+        }
+      ]
+    },
+    {
+      "id": "CNT-004",
+      "name": "Marketing Services Contract",
+      "parties": ["StartupXYZ", "Digital Marketing Pro"],
+      "startDate": "2024-02-01",
+      "expiryDate": "2024-08-01",
+      "status": "active",
+      "riskScore": 3.2,
+      "value": 45000,
+      "type": "Service Agreement",
+      "clauses": [
+        {
+          "id": "CL-006",
+          "title": "Performance Metrics",
+          "summary": "Success measured by lead generation targets and conversion rates.",
+          "confidence": 0.76,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "medium",
+          "title": "Vague Performance Metrics",
+          "description": "Success criteria are not quantitatively defined, leading to potential disputes."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Contractor shall generate qualified leads as mutually agreed",
+          "relevance": 0.85,
+          "page": 2,
+          "section": "Deliverables"
+        }
+      ]
+    },
+    {
+      "id": "CNT-005",
+      "name": "Supply Chain Agreement",
+      "parties": ["Global Retail Corp", "Supplier Network Ltd"],
+      "startDate": "2023-01-01",
+      "expiryDate": "2025-12-31",
+      "status": "active",
+      "riskScore": 2.8,
+      "value": 500000,
+      "type": "Supply Agreement",
+      "clauses": [
+        {
+          "id": "CL-007",
+          "title": "Quality Standards",
+          "summary": "All products must meet ISO 9001 quality standards.",
+          "confidence": 0.94,
+          "riskLevel": "low"
+        },
+        {
+          "id": "CL-008",
+          "title": "Price Adjustment",
+          "summary": "Prices subject to quarterly review based on market conditions.",
+          "confidence": 0.87,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "recommendation",
+          "severity": "medium",
+          "title": "Price Volatility Risk",
+          "description": "Consider price caps or more frequent reviews to manage cost volatility."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Delivery schedule shall not exceed 14 business days from order",
+          "relevance": 0.91,
+          "page": 3,
+          "section": "Delivery Terms"
+        }
+      ]
+    },
+    {
+      "id": "CNT-006",
+      "name": "Real Estate Lease",
+      "parties": ["Property Holdings Inc", "Office Solutions Corp"],
+      "startDate": "2023-09-01",
+      "expiryDate": "2024-08-31",
+      "status": "expiring_soon",
+      "riskScore": 3.9,
+      "value": 120000,
+      "type": "Lease Agreement",
+      "clauses": [
+        {
+          "id": "CL-009",
+          "title": "Rent Escalation",
+          "summary": "Annual rent increase of 3% or CPI, whichever is higher.",
+          "confidence": 0.93,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "high",
+          "title": "Lease Expiring Soon",
+          "description": "Commercial lease expires in 4 months. Renewal terms should be negotiated."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Tenant responsible for all utilities and common area maintenance",
+          "relevance": 0.88,
+          "page": 5,
+          "section": "Tenant Obligations"
+        }
+      ]
+    },
+    {
+      "id": "CNT-007",
+      "name": "Software License Agreement",
+      "parties": ["Enterprise Corp", "SoftwareCo Ltd"],
+      "startDate": "2024-01-01",
+      "expiryDate": "2024-12-31",
+      "status": "pending",
+      "riskScore": 1.8,
+      "value": 25000,
+      "type": "License Agreement",
+      "clauses": [
+        {
+          "id": "CL-010",
+          "title": "Usage Limitations",
+          "summary": "License limited to 100 concurrent users maximum.",
+          "confidence": 0.99,
+          "riskLevel": "low"
+        }
+      ],
+      "insights": [
+        {
+          "type": "recommendation",
+          "severity": "low",
+          "title": "Standard License Terms",
+          "description": "License terms are standard and present minimal risk."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Software may not be reverse engineered or redistributed",
+          "relevance": 0.96,
+          "page": 2,
+          "section": "License Restrictions"
+        }
+      ]
+    },
+    {
+      "id": "CNT-008",
+      "name": "Employment Contract",
+      "parties": ["TechStartup Inc", "Jane Developer"],
+      "startDate": "2024-04-01",
+      "expiryDate": "2025-04-01",
+      "status": "active",
+      "riskScore": 2.1,
+      "value": 85000,
+      "type": "Employment Agreement",
+      "clauses": [
+        {
+          "id": "CL-011",
+          "title": "Non-Compete Clause",
+          "summary": "Employee cannot work for competitors for 6 months after termination.",
+          "confidence": 0.88,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "medium",
+          "title": "Non-Compete Enforceability",
+          "description": "Non-compete clauses have varying enforceability across jurisdictions."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Base salary of $85,000 with annual performance review",
+          "relevance": 0.94,
+          "page": 1,
+          "section": "Compensation"
+        }
+      ]
+    },
+    {
+      "id": "CNT-009",
+      "name": "Data Processing Agreement",
+      "parties": ["HealthCorp", "Cloud Services Inc"],
+      "startDate": "2024-05-01",
+      "expiryDate": "2027-04-30",
+      "status": "active",
+      "riskScore": 3.6,
+      "value": 200000,
+      "type": "Data Agreement",
+      "clauses": [
+        {
+          "id": "CL-012",
+          "title": "GDPR Compliance",
+          "summary": "Both parties must maintain GDPR compliance for all data processing.",
+          "confidence": 0.92,
+          "riskLevel": "high"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "high",
+          "title": "Regulatory Compliance Risk",
+          "description": "GDPR violations can result in significant penalties. Ensure ongoing compliance."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Data must be encrypted in transit and at rest using AES-256",
+          "relevance": 0.97,
+          "page": 6,
+          "section": "Security Requirements"
+        }
+      ]
+    },
+    {
+      "id": "CNT-010",
+      "name": "Consulting Agreement",
+      "parties": ["FinanceCorp", "Strategy Consultants LLC"],
+      "startDate": "2023-11-01",
+      "expiryDate": "2024-10-31",
+      "status": "expiring_soon",
+      "riskScore": 2.9,
+      "value": 180000,
+      "type": "Consulting Agreement",
+      "clauses": [
+        {
+          "id": "CL-013",
+          "title": "Deliverables Schedule",
+          "summary": "Monthly reports and quarterly strategic assessments required.",
+          "confidence": 0.85,
+          "riskLevel": "medium"
+        }
+      ],
+      "insights": [
+        {
+          "type": "risk",
+          "severity": "medium",
+          "title": "Contract Renewal Needed",
+          "description": "Consulting agreement expires in 2 months. Review performance before renewal."
+        }
+      ],
+      "evidence": [
+        {
+          "snippet": "Consultant shall provide strategic recommendations based on industry analysis",
+          "relevance": 0.83,
+          "page": 2,
+          "section": "Scope of Work"
+        }
+      ]
+    }
+  ]
+}
