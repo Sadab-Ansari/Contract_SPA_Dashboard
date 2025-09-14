@@ -73,7 +73,7 @@ const Login: React.FC = () => {
           <div className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-primary shadow-lg mb-4">
             <FileText className="h-8 w-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold tracking-tight">ContractsDash</h1>
+          <h1 className="text-3xl font-bold tracking-tight">ContractsDashboard</h1>
           <p className="text-muted-foreground mt-2">
             Sign in to manage your contracts
           </p>
@@ -149,10 +149,8 @@ const Login: React.FC = () => {
           </div>
         </Card>
 
-        {/* Footer */}
-        <p className="text-center text-sm text-muted-foreground mt-6">
-          © 2024 ContractsDash. All rights reserved.
-        </p>
+       
+        
       </div>
     </div>
   );
