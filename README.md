@@ -1,60 +1,81 @@
-📑 SaaS Contracts Dashboard
+# 📑 SaaS Contracts Dashboard
 
-A React + Tailwind single-page application simulating a SaaS contracts management dashboard.
-Built for a UI/UX Developer Assignment to demonstrate modern frontend design, API handling, and state management.
+A **React + Tailwind single-page application** simulating a modern SaaS contracts management dashboard.  
+This project was developed as part of a **UI/UX Developer Assignment** to showcase skills in frontend development, responsive design, state management, and API integration.
 
-✨ Features
+## ✨ Features
 
-🔐 Authentication
+- 🔐 **Authentication**
+  - Mock login (any username, password = `test123`)
+  - JWT stored in `localStorage` for session simulation
 
-Mock login (any username, password = test123)
+- 📊 **Contracts Dashboard**
+  - Sidebar navigation: Contracts, Insights, Reports, Settings
+  - Topbar with profile dropdown
+  - Search contracts by name or parties
+  - Filters: Status (Active, Expired, Renewal Due) & Risk (Low, Medium, High)
+  - Pagination (10 rows per page)
+  - Graceful handling of loading, empty, and error states
 
-JWT stored in localStorage
+- 📑 **Contract Detail Page**
+  - Display metadata: parties, start & expiry dates, status, risk score
+  - Clauses section with summaries and confidence scores
+  - AI Insights section with risks and recommendations
+  - Evidence panel with relevance scores and copy-to-clipboard
 
-📊 Contracts Dashboard
+- ⬆️ **Upload Modal**
+  - Drag & drop or browse file uploads
+  - Simulated upload with status indicators
 
-Sidebar navigation: Contracts, Insights, Reports, Settings
+- 📱 **Responsive Design**
+  - Fully optimized for desktop and mobile screens
+## 🛠 Tech Stack
 
-Topbar with profile dropdown
+- **Frontend:** React (Vite, functional components, hooks)  
+- **Styling:** Tailwind CSS  
+- **UI Components:** shadcn/ui  
+- **Routing:** React Router v6  
+- **State Management:** Context API (Authentication & App state)  
+- **Deployment:** Vercel  
 
-Search by contract name / parties
+---
 
-Filters: Status (Active, Expired, Renewal Due) & Risk (Low, Medium, High)
+## 📊 Mock API & Data
 
-Pagination (10 rows per page)
+- **Contracts List:** `GET /contracts`  
+- **Contract Detail:** `GET /contracts/:id`  
 
-Graceful handling of loading, empty, and error states
+> All data is hosted locally in **`/public/contracts.json`** and fetched using the native `fetch()` API.  
+> This simulates real API calls without requiring a backend.
 
-📑 Contract Detail Page
+Sample data includes:
+- Contract ID, name, and parties
+- Start and expiry dates
+- Status (Active, Expired, Renewal Due)
+- Risk score (Low, Medium, High)
+- Clauses with summaries and confidence scores
+- AI-generated insights and evidence
+## 🚀 Getting Started
 
-Metadata: parties, start & expiry dates, status, risk score
+### Prerequisites
+- Node.js >= 18.x  
+- npm >= 9.x  
 
-Clauses section with summaries + confidence scores
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Sadab-Ansari/Contract_SPA_Dashboard.git
+cd smart-contracts-dash
+# Install dependencies
+npm install
 
-AI Insights section with risk & recommendation labels
+## 🌐 Deployment
 
-Evidence panel with relevance scores and copy-to-clipboard functionality
+The project is deployed on **Vercel** for easy access and demonstration.  
 
-⬆️ Upload Modal
+🔗 **Live Demo:** [https://contract-spa-dashboard.vercel.app](https://contract-spa-dashboard.vercel.app)
 
-Drag & drop or browse file
+> The app is fully functional in the browser, including authentication simulation, contract browsing, filters, and contract detail views.
 
-Simulated file upload with status indicators
 
-📱 Responsive UI/UX
 
-Fully optimized for desktop and mobile screens
-
-🛠 Tech Stack
-
-React (Vite, functional components, hooks)
-
-Tailwind CSS for styling
-
-shadcn/ui for reusable components
-
-React Router v6 for routing
-
-Context API for authentication & state management
-
-Vercel for deployment
