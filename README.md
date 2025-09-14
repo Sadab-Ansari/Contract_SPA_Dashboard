@@ -1,121 +1,60 @@
-# 📑 SaaS Contracts Dashboard
+📑 SaaS Contracts Dashboard
 
-A **React + Tailwind single-page application** that simulates a SaaS contracts management dashboard.  
-Built for the **UI/UX Developer Assignment** to demonstrate modern frontend design, API handling, and state management.
+A React + Tailwind single-page application simulating a SaaS contracts management dashboard.
+Built for a UI/UX Developer Assignment to demonstrate modern frontend design, API handling, and state management.
 
----
+✨ Features
 
-## ✨ Features
+🔐 Authentication
 
-- 🔐 **Authentication** → mock login (any username, password = `test123`), JWT stored in localStorage  
-- 📊 **Contracts Dashboard**  
-  - Sidebar navigation (Contracts, Insights, Reports, Settings)  
-  - Topbar with profile dropdown  
-  - Search by contract name / parties  
-  - Filters: Status (Active, Expired, Renewal Due) & Risk (Low, Medium, High)  
-  - Pagination (10 rows per page)  
-  - Loading, Empty, and Error states handled gracefully  
-- 📑 **Contract Detail Page**  
-  - Metadata: parties, start & expiry dates, status, risk score  
-  - Clauses section with summaries + confidence scores  
-  - AI Insights section with risks & recommendations (severity labels)  
-  - Evidence panel with relevance scores and copy-to-clipboard  
-- ⬆️ **Upload Modal** → drag & drop or browse, simulated file upload with statuses  
-- 📱 **Responsive UI/UX** → optimized for desktop and mobile  
+Mock login (any username, password = test123)
 
----
+JWT stored in localStorage
 
-## 🛠 Tech Stack
+📊 Contracts Dashboard
 
-- React (Vite, functional components, hooks)  
-- Tailwind CSS for styling  
-- shadcn/ui for customizable components  
-- React Router v6 for routing  
-- Context API for auth & state management  
-- Vercel for deployment  
+Sidebar navigation: Contracts, Insights, Reports, Settings
 
----
-## 📊 Mock API
+Topbar with profile dropdown
 
-- **Contracts List** → `GET /contracts`  
-- **Contract Detail** → `GET /contracts/:id`  
+Search by contract name / parties
 
-Data is hosted locally in **`/public/contracts.json`** and fetched with `fetch()`.
+Filters: Status (Active, Expired, Renewal Due) & Risk (Low, Medium, High)
 
----
+Pagination (10 rows per page)
 
-## ⚡ Getting Started
+Graceful handling of loading, empty, and error states
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/Sadab-Ansari/Contract_SPA_Dashboard
-cd saas-contracts-dashboard
+📑 Contract Detail Page
 
-npm install 
+Metadata: parties, start & expiry dates, status, risk score
 
-npm run dev
+Clauses section with summaries + confidence scores
 
+AI Insights section with risk & recommendation labels
 
-## 🌐 Deployment
+Evidence panel with relevance scores and copy-to-clipboard functionality
 
-🔗 Live Demo → [# 📑 SaaS Contracts Dashboard
+⬆️ Upload Modal
 
-A **React + Tailwind single-page application** that simulates a SaaS contracts management dashboard.  
-Built for the **UI/UX Developer Assignment** to demonstrate modern frontend design, API handling, and state management.
+Drag & drop or browse file
 
----
+Simulated file upload with status indicators
 
-## ✨ Features
+📱 Responsive UI/UX
 
-- 🔐 **Authentication** → mock login (any username, password = `test123`), JWT stored in localStorage  
-- 📊 **Contracts Dashboard**  
-  - Sidebar navigation (Contracts, Insights, Reports, Settings)  
-  - Topbar with profile dropdown  
-  - Search by contract name / parties  
-  - Filters: Status (Active, Expired, Renewal Due) & Risk (Low, Medium, High)  
-  - Pagination (10 rows per page)  
-  - Loading, Empty, and Error states handled gracefully  
-- 📑 **Contract Detail Page**  
-  - Metadata: parties, start & expiry dates, status, risk score  
-  - Clauses section with summaries + confidence scores  
-  - AI Insights section with risks & recommendations (severity labels)  
-  - Evidence panel with relevance scores and copy-to-clipboard  
-- ⬆️ **Upload Modal** → drag & drop or browse, simulated file upload with statuses  
-- 📱 **Responsive UI/UX** → optimized for desktop and mobile  
+Fully optimized for desktop and mobile screens
 
----
+🛠 Tech Stack
 
-## 🛠 Tech Stack
+React (Vite, functional components, hooks)
 
-- React (Vite, functional components, hooks)  
-- Tailwind CSS for styling  
-- shadcn/ui for customizable components  
-- React Router v6 for routing  
-- Context API for auth & state management  
-- Vercel for deployment  
+Tailwind CSS for styling
 
-## 📊 Mock API
+shadcn/ui for reusable components
 
-- **Contracts List** → `GET /contracts`  
-- **Contract Detail** → `GET /contracts/:id`  
+React Router v6 for routing
 
-Data is hosted locally in **`/public/contracts.json`** and fetched with `fetch()`.
+Context API for authentication & state management
 
----
-
-## ⚡ Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Sadab-Ansari/Contract_SPA_Dashboard
-cd saas-contracts-dashboard
-
-npm install 
-
-npm run dev
-
-
-## 🌐 Deployment
-
-🔗 Live Demo → [https://contract-spa-dashboard.vercel.app]
-]
+Vercel for deployment
