@@ -64,21 +64,40 @@ const ContractDetail: React.FC = () => {
     const fetchContract = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('/contracts.json');
+        setError(null);
         
-        if (!response.ok) {
-          throw new Error('Failed to fetch contract data');
+        // Try different possible paths for the JSON file
+        const possiblePaths = ['/contracts.json', './contracts.json', '/public/contracts.json'];
+        let response: Response | null = null;
+        let lastError: Error | null = null;
+        
+        for (const path of possiblePaths) {
+          try {
+            const fetchResponse = await fetch(path);
+            if (fetchResponse.ok) {
+              response = fetchResponse;
+              break;
+            }
+          } catch (err) {
+            lastError = err as Error;
+            continue;
+          }
+        }
+        
+        if (!response || !response.ok) {
+          throw new Error(`Failed to fetch contract data. ${lastError ? lastError.message : 'No valid data source found.'}`);
         }
         
         const data = await response.json();
-        const foundContract = data.contracts.find((c: Contract) => c.id === id);
+        const foundContract = data.contracts?.find((c: Contract) => c.id === id);
         
         if (!foundContract) {
-          throw new Error('Contract not found');
+          throw new Error(`Contract with ID "${id}" not found in the database.`);
         }
         
         setContract(foundContract);
       } catch (err) {
+        console.error('Error fetching contract:', err);
         setError(err instanceof Error ? err.message : 'Unknown error occurred');
       } finally {
         setIsLoading(false);
@@ -87,6 +106,9 @@ const ContractDetail: React.FC = () => {
 
     if (id) {
       fetchContract();
+    } else {
+      setError('No contract ID provided');
+      setIsLoading(false);
     }
   }, [id]);
 
