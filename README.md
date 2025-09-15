@@ -3,7 +3,7 @@
 ## 1.Clone the repository
 ```
 git clone https://github.com/Sadab-Ansari/Contract_SPA_Dashboard.git
-cd Contract_SPA_Dashboard
+cd Saas_Contract_Dashboard
 ```
 ## 2.Install dependencies
 ```
