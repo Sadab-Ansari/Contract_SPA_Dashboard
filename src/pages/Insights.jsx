@@ -1,15 +1,15 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { FileBarChart, Download, Calendar, Users } from 'lucide-react';
+import { BarChart3, TrendingUp, AlertTriangle, Target } from 'lucide-react';
 
-const Reports: React.FC = () => {
+const Insights = () => {
   return (
     <div className="space-y-8">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Contract Reports</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Contract Insights</h1>
         <p className="text-muted-foreground mt-2">
-          Generate comprehensive reports for compliance, analysis, and stakeholders
+          AI-powered analytics and insights from your contract portfolio
         </p>
       </div>
 
@@ -18,32 +18,32 @@ const Reports: React.FC = () => {
         <div className="max-w-md mx-auto">
           <div className="flex justify-center mb-6">
             <div className="p-4 bg-primary/10 rounded-full">
-              <FileBarChart className="h-12 w-12 text-primary" />
+              <BarChart3 className="h-12 w-12 text-primary" />
             </div>
           </div>
           
-          <h2 className="text-2xl font-bold mb-4">Automated Reporting Coming Soon</h2>
+          <h2 className="text-2xl font-bold mb-4">Advanced Insights Coming Soon</h2>
           <p className="text-muted-foreground mb-6">
-            Generate detailed reports with customizable templates, automated scheduling, 
-            and export options for all your contract management needs.
+            We're building powerful analytics to help you understand contract patterns, 
+            risk trends, and optimization opportunities across your entire portfolio.
           </p>
           
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="flex items-center gap-2 text-left">
-              <Download className="h-4 w-4 text-primary" />
-              PDF & Excel exports
+              <TrendingUp className="h-4 w-4 text-success" />
+              Risk trending analysis
             </div>
             <div className="flex items-center gap-2 text-left">
-              <Calendar className="h-4 w-4 text-success" />
-              Scheduled reports
+              <AlertTriangle className="h-4 w-4 text-warning" />
+              Anomaly detection
             </div>
             <div className="flex items-center gap-2 text-left">
-              <Users className="h-4 w-4 text-warning" />
-              Stakeholder sharing
+              <Target className="h-4 w-4 text-primary" />
+              Performance metrics
             </div>
             <div className="flex items-center gap-2 text-left">
-              <FileBarChart className="h-4 w-4 text-accent-foreground" />
-              Custom templates
+              <BarChart3 className="h-4 w-4 text-accent-foreground" />
+              Portfolio overview
             </div>
           </div>
         </div>
@@ -52,4 +52,4 @@ const Reports: React.FC = () => {
   );
 };
 
-export default Reports;
+export default Insights;

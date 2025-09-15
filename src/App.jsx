@@ -15,6 +15,7 @@ import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import { useState } from "react";
+import "./index.css"; // Explicit CSS import
 
 const queryClient = new QueryClient();
 

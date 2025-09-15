@@ -1,8 +1,11 @@
-import type { Config } from "tailwindcss";
-
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -78,20 +81,21 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 54%))',
-        'gradient-card': 'none',
-        'gradient-hero': 'none',
+        "gradient-primary":
+          "linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 54%))",
+        "gradient-card": "none",
+        "gradient-hero": "none",
       },
       boxShadow: {
-        'sm': 'var(--shadow-sm)',
-        'md': 'var(--shadow-md)',
-        'lg': 'var(--shadow-lg)',
-        'xl': 'var(--shadow-xl)',
-        'primary': 'var(--shadow-primary)',
+        sm: "var(--shadow-sm)",
+        md: "var(--shadow-md)",
+        lg: "var(--shadow-lg)",
+        xl: "var(--shadow-xl)",
+        primary: "var(--shadow-primary)",
       },
       transitionProperty: {
-        'smooth': 'var(--transition-smooth)',
-        'fast': 'var(--transition-fast)',
+        smooth: "var(--transition-smooth)",
+        fast: "var(--transition-fast)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -123,4 +127,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
