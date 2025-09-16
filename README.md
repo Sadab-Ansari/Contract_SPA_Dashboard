@@ -3,7 +3,7 @@
 ## 1.Clone the repository
 
 ```
-git clone https://github.com/Sadab-Ansari/Saas_Contracts_Dashboard.git
+git clone https://github.com/Sadab-Ansari/Saas_Contracts_Dashboard
 cd Saas_Contract_Dashboard
 ```
 
